@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/thecity"
+    android:transitionName="transition_login"
+    android:id="@+id/layoutLogin"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/img_signup_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:onClick="backFromLogin"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/img_signup_back"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Chào Mừng"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        >
+
+    </TextView>
+    <TextView
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <TextView
+            android:textSize="20dp"
+            android:text="Mật Khẩu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mk"
+            android:background="@color/white"
+            android:hint="Nhập mật khẩu"
+            android:textColorHint="#74000000"
+            android:textColor="@color/black"
+            android:padding="20dp"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btndangnhap"
+        android:text="Đăng nhập"
+        android:background="@drawable/button"
+        android:layout_width="420dp"
+        android:layout_height="50dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </Button>
+
+
+</LinearLayout>
